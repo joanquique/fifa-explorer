@@ -1,30 +1,16 @@
-/* Reset y base */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+$color-primary: #2a5d9f;
+$color-primary-light: #1a73e8;
+$color-text: #222;
+$color-bg: #fff;
+
+// Mixins (ejemplo)
+@mixin transition($props...) {
+  transition: $props;
 }
 
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #fff;
-  color: #222;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-a {
-  color: #2a5d9f;
-  text-decoration: none;
-  cursor: pointer;
-
-  &:hover,
-  &.active {
-    text-decoration: underline;
-  }
-}
-
-h1, h2 {
-  font-weight: 600;
-  color: #fff;
+// Placeholders (ejemplo)
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

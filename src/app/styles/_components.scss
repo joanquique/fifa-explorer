@@ -23,11 +23,11 @@
         display: block;
         padding: 0.3rem 0.5rem;
         border-radius: 4px;
-        transition: background-color 0.25s ease, color 0.25s ease;
+        @include transition(background-color 0.25s ease, color 0.25s ease);
 
         &:hover,
         &.active {
-          background-color: #1a73e8;
+          background-color: $color-primary-light;
           color: #fff;
           text-decoration: none;
         }
@@ -37,7 +37,7 @@
 }
 
 .main-header {
-  background-color: #2a5d9f;
+  background-color: $color-primary;
   color: white;
   padding: 1rem 2rem;
   box-shadow: 0 2px 5px rgba(26, 115, 232, 0.4);
@@ -61,7 +61,7 @@
           font-weight: 600;
           padding: 0.25rem 0.5rem;
           border-radius: 8px;
-          transition: background-color 0.25s ease;
+          @include transition(background-color 0.25s ease);
 
           &:hover,
           &.active {

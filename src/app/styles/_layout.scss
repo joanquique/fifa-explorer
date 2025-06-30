@@ -1,3 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: $color-bg;
+  color: $color-text;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+a {
+  color: $color-primary;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover,
+  &.active {
+    text-decoration: underline;
+  }
+}
+
+h1, h2 {
+  font-weight: 600;
+  color: $color-bg; // blanco
+}
+
 .layout {
   display: flex;
   height: 100vh;
